@@ -1,3 +1,7 @@
+.container {
+  max-width: 600px;
+}
+
 .layout {
   border-top: 3px;
   border-left: 3px;
@@ -8,8 +12,7 @@
   border-radius: 30px;
   margin-top: 150px;
   margin-bottom: 150px;
-  margin-right: 150px;
-  margin-left: 250px;
+
   width: 650px;
   height: 380px;
 }
@@ -71,4 +74,13 @@ button:hover {
 #wind {
   font-size: larger;
   margin-left: 380px;
+}
+#git {
+  margin-left: 26px;
+  margin-top: -140px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: large;
+}
+#git-link {
+  text-decoration: none;
 }
