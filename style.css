@@ -62,6 +62,13 @@ button:hover {
 .d-flex {
   margin-left: 30px;
 }
+.active {
+  color: black;
+}
+.active:hover {
+  color: black;
+  cursor: default;
+}
 
 .listStyle {
   list-style-type: none;

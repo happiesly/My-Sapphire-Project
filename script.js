@@ -40,6 +40,8 @@ function showWeather(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  document.querySelector("#sky").innerHTML =
+    response.data.weather[0].description;
   document
     .querySelector("#weather-icon")
     .setAttribute("alt", response.data.weather[0].description);
@@ -65,18 +67,22 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(findLocation);
 }
 
-function showCelsius(event) {
-  event.preventDefault;
-  let celsiusDegree = document.querySelector("#degree");
-  let celsius = celsiusDegree.innerHTML;
-  celsiusDegree.innerHTML = Math.round(((celsius - 32) * 5) / 9);
-}
 function showFahrenheit(event) {
   event.preventDefault;
   let temperatureId = document.querySelector("#degree");
+  celsiusLink.classList.remove("active");
+  fahrenheit.classList.add("active");
   let temperature = temperatureId.innerHTML;
   temperature = Number(temperature);
   temperatureId.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
+function showCelsius(event) {
+  event.preventDefault;
+  let celsiusDegree = document.querySelector("#degree");
+  celsiusLink.classList.add("active");
+  fahrenheit.classList.remove("active");
+  let celsius = celsiusDegree.innerHTML;
+  celsiusDegree.innerHTML = Math.round(((celsius - 32) * 5) / 9);
 }
 let dateId = document.querySelector("#date");
 let currentDate = new Date();
@@ -88,8 +94,8 @@ searchId.addEventListener("submit", handleSub);
 let currentLocation = document.querySelector("#current-button");
 currentLocation.addEventListener("click", getCurrentLocation);
 
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", showCelsius);
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius);
 
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", showFahrenheit);
