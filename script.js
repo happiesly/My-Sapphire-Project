@@ -54,6 +54,20 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(findLocation);
 }
+
+function showCelsius(event) {
+  event.preventDefault;
+  let celsiusId = document.querySelector("#degree");
+  let celsius = celsiusId.innerHTML;
+  celsiusId.innerHTML = Math.round(((celsius - 32) * 5) / 9);
+}
+function showFahrenheit(event) {
+  event.preventDefault;
+  let temperatureId = document.querySelector("#degree");
+  let temperature = temperatureId.innerHTML;
+  temperature = Number(temperature);
+  temperatureId.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
 let dateId = document.querySelector("#date");
 let currentDate = new Date();
 dateId.innerHTML = displayDate(currentDate);
@@ -63,5 +77,11 @@ searchId.addEventListener("submit", handleSub);
 
 let currentLocation = document.querySelector("#current-button");
 currentLocation.addEventListener("click", getCurrentLocation);
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", showCelsius);
+
+let fahrenheit = document.querySelector("#fahrenheit");
+fahrenheit.addEventListener("click", showFahrenheit);
 
 search("uyo");
