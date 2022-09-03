@@ -12,7 +12,6 @@
   border-radius: 30px;
   margin-top: 150px;
   margin-bottom: 150px;
-
   width: 650px;
   height: 380px;
 }
@@ -57,23 +56,25 @@ button:hover {
 
 #degree {
   font-size: 30px;
-  font-weight: bolder;
 }
+.d-flex {
+  margin-left: 20px;
+}
+
 .listStyle {
   list-style-type: none;
   font-size: larger;
 }
 #city {
+  margin: 0 auto;
+  padding: 0px;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-#humidity {
-  margin-top: 1px;
-}
+
 #humidity,
 #wind {
   font-size: larger;
-  margin-left: 380px;
 }
 #git {
   margin-left: 26px;
@@ -83,4 +84,7 @@ button:hover {
 }
 #git-link {
   text-decoration: none;
+}
+ul {
+  list-style: none;
 }
