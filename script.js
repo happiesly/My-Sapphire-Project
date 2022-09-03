@@ -28,11 +28,21 @@ function showWeather(response) {
     response.data.main.temp
   );
 
-  document.querySelector("#sky").innerHTML = response.data.weather[0].main;
+  document.querySelector("#sky").innerHTML =
+    response.data.weather[0].description;
   document.querySelector("#humid").innerHTML = response.data.main.humidity;
   document.querySelector("#windy").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document
+    .querySelector("#weather-icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#weather-icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 function search(city) {
   let apiKey = "e0a5a97de9a0b7a951e9d154a8f9bad8";
