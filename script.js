@@ -57,9 +57,9 @@ function getCurrentLocation(event) {
 
 function showCelsius(event) {
   event.preventDefault;
-  let celsiusId = document.querySelector("#degree");
-  let celsius = celsiusId.innerHTML;
-  celsiusId.innerHTML = Math.round(((celsius - 32) * 5) / 9);
+  let celsiusDegree = document.querySelector("#degree");
+  let celsius = celsiusDegree.innerHTML;
+  celsiusDegree.innerHTML = Math.round(((celsius - 32) * 5) / 9);
 }
 function showFahrenheit(event) {
   event.preventDefault;
