@@ -55,7 +55,9 @@ button:hover {
 }
 
 #degree {
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
 }
 .d-flex {
   margin-left: 20px;
