@@ -1,3 +1,22 @@
+button {
+  background-color: rgb(137, 115, 153);
+  border-radius: 50px;
+  border-color: blue;
+  color: skyblue;
+  margin: 12px;
+  margin-left: 80px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  background-color: skyblue;
+  color: indigo;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 600px;
 }
@@ -12,23 +31,35 @@
   border-radius: 30px;
   margin-top: 150px;
   margin-bottom: 150px;
-  width: 650px;
   height: 380px;
+  width: 650px;
 }
 
-button {
-  margin: 12px;
-  margin-left: 80px;
-  background-color: rgb(137, 115, 153);
-  color: skyblue;
-  padding: 5px 10px;
-  border-radius: 50px;
-  border-color: blue;
+.search {
+  font-size: larger;
+  display: block;
+  margin-top: 50px;
+  margin-left: 20px;
 }
-button:hover {
-  background-color: skyblue;
-  color: indigo;
+
+.d-flex {
+  margin-left: 30px;
 }
+
+.active {
+  color: black;
+}
+
+.active:hover {
+  color: black;
+  cursor: default;
+}
+
+.listStyle {
+  font-size: larger;
+  list-style-type: none;
+}
+
 #celsius,
 #fahrenheit {
   text-decoration: none;
@@ -37,21 +68,16 @@ button:hover {
 #sub {
   background-color: skyblue;
   border-color: blue;
-  color: indigo;
   border-radius: 50px;
+  color: indigo;
   margin-left: 10px;
   padding: 5px 10px;
 }
+
 #sub:hover {
   background-color: rgb(137, 115, 153);
   color: skyblue;
   transition: 200ms ease-in-out;
-}
-.search {
-  font-size: larger;
-  margin-top: 50px;
-  display: block;
-  margin-left: 20px;
 }
 
 #degree {
@@ -59,45 +85,30 @@ button:hover {
   font-weight: bold;
   line-height: 50px;
 }
-.d-flex {
-  margin-left: 30px;
-}
-.active {
-  color: black;
-}
-.active:hover {
-  color: black;
-  cursor: default;
-}
 
-.listStyle {
-  list-style-type: none;
-  font-size: larger;
-}
 #weather-icon {
   margin-right: 15px;
 }
 
 #city {
-  margin: 0 auto;
-  padding: 0px;
   font-size: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 #humidity,
 #wind {
   font-size: larger;
 }
+
 #git {
-  margin-left: 26px;
-  margin-top: -140px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: large;
+  margin-left: 26px;
+  margin-top: -140px;
 }
+
 #git-link {
   text-decoration: none;
-}
-ul {
-  list-style: none;
 }
