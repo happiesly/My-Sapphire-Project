@@ -32,6 +32,7 @@ ul {
   margin-left: 30px;
   margin-right: 30px;
   padding: 10px 20px;
+  font-family: "Combo", cursive;
 }
 
 .container {
@@ -122,7 +123,7 @@ ul {
 }
 
 #git {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Combo", cursive;
   font-size: large;
   margin-left: 26px;
   margin-top: -140px;
